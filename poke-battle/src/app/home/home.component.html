@@ -1,14 +1,14 @@
-<h2>Battle Arena</h2>
 
-<div class="battle-container">
 
-  <div class="poke-card" [class.winner]="isWinner(poke1)">
+<div class="battle-container framed">
+  <h2>Battle Arena</h2>
+  <div *ngIf="poke1" class="poke-card framed" [class.winner]="isWinner(poke1)">
     <img [src]="poke1?.sprite">
     <h3>{{ poke1?.name }}</h3>
     <p>{{ poke1?.type }}</p>
   </div>
-
-  <div class="poke-card" [class.winner]="isWinner(poke2)">
+  <h1>Vs</h1>
+  <div *ngIf="poke2" class="poke-card framed" [class.winner]="isWinner(poke2)">
     <img [src]="poke2?.sprite">
     <h3>{{ poke2?.name }}</h3>
     <p>{{ poke2?.type }}</p>

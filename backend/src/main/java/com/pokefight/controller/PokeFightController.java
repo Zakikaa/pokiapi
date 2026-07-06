@@ -1,11 +1,9 @@
 package com.pokefight.controller;
 
-import java.util.List;
 import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,7 +16,7 @@ import com.pokefight.service.PokeCacheService;
 import com.pokefight.util.PokeType;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/fight")
 @CrossOrigin(origins = "http://localhost:4200")
 public class PokeFightController {
 	@Autowired
@@ -34,7 +32,7 @@ public class PokeFightController {
 	}
 	
 
-	@PostMapping("/fight")
+	@PostMapping
 	public int fight(@RequestParam int id, @RequestParam int id2) {
 		Random r= new Random();
 

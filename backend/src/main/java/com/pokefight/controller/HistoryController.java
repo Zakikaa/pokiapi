@@ -23,8 +23,8 @@ public class HistoryController  {
 		this.fightLogService = fightLogService;
 	}
 
-    @GetMapping()
-    public List<FightResult> history() {
+    @GetMapping
+    public List<FightResult> getHistory() {
         return fightLogService.getHistory();
     }
 }

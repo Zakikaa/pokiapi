@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { PokeService } from '../service/poke.service';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   standalone: true,
   selector: 'app-history',
   templateUrl: './history.component.html',
-  styleUrls: ['./history.component.css', '../styles/css-pokemon-gameboy.css']
+  styleUrls: ['./history.component.css', '../styles/css-pokemon-gameboy.css'],
+  imports: [CommonModule]
 })
 export class HistoryComponent implements OnInit {
 

@@ -14,10 +14,10 @@ export class PokeService {
   }
 
   fight(id1: number, id2: number): Observable<any> {
-    return this.http.post(`${this.baseUrl}/fight`, { id1, id2 });
+    return this.http.post(`${this.baseUrl}/fight?id=${id1}&id2=${id2}`, {});
   }
 
   getHistory(): Observable<any[]> {
-    return this.http.get<any[]>(`${this.baseUrl}/poke/history`);
+    return this.http.get<any[]>(`${this.baseUrl}/history`);
   }
 }
