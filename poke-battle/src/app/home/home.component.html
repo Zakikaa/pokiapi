@@ -1,0 +1,21 @@
+<h2>Battle Arena</h2>
+
+<div class="battle-container">
+
+  <div class="poke-card" [class.winner]="isWinner(poke1)">
+    <img [src]="poke1?.sprite">
+    <h3>{{ poke1?.name }}</h3>
+    <p>{{ poke1?.type }}</p>
+  </div>
+
+  <div class="poke-card" [class.winner]="isWinner(poke2)">
+    <img [src]="poke2?.sprite">
+    <h3>{{ poke2?.name }}</h3>
+    <p>{{ poke2?.type }}</p>
+  </div>
+
+</div>
+
+<ul class="framed buttons">
+  <li><button (click)="fight(poke1.id, poke2.id)">FIGHT</button></li>
+</ul>

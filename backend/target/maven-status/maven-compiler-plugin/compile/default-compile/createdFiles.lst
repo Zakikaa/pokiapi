@@ -1,0 +1,11 @@
+com\pokefight\service\FightLogService.class
+com\pokefight\service\PokeCacheService.class
+com\pokefight\controller\PokeFightController.class
+com\pokefight\dto\Poke.class
+com\pokefight\controller\HistoryController.class
+com\pokefight\PokeFightApplication.class
+com\pokefight\dto\FightResult.class
+com\pokefight\controller\PokeController.class
+com\pokefight\util\PokeType$Type.class
+com\pokefight\util\PokeType.class
+com\pokefight\service\PokeApiService.class

@@ -1,0 +1,24 @@
+<h2>Battle History</h2>
+
+<div *ngFor="let entry of history" class="framed">
+
+  <div class="pokemon-card framed">
+    <img [src]="entry.first.sprite">
+    <h3>{{ entry.first.name }}</h3>
+    <p>{{ entry.first.type }}</p>
+  </div>
+
+  <div class="pokemon-card framed">
+    <img [src]="entry.second.sprite">
+    <h3>{{ entry.second.name }}</h3>
+    <p>{{ entry.second.type }}</p>
+  </div>
+
+  <div class="pokemon-card framed">
+    <img [src]="entry.second.sprite">
+    <h3>{{ entry.winner.name }}</h3>
+    <p>{{ entry.winner.type }}</p>
+  </div>
+
+  <p class="timestamp">{{ entry.timestamp }}</p>
+</div>
